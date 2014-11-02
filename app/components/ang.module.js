@@ -6,10 +6,11 @@
 
 angular
   .module('angmericaApp', [
+    'ngAnimate',
+    'ngResource',
+    'ngRoute',
     'about.module',
     'header.module',
     'main.module',
-    'ngAnimate',
-    'ngResource',
-    'ngRoute'
+    'resume.module'
   ]);
