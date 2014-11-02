@@ -19,6 +19,10 @@ angular.module('angmericaApp')
         templateUrl: 'components/about/about.view.html',
         controller: 'AboutCtrl'
       })
+      .when('/resume', {
+        templateUrl: 'components/resume/resume.view.html',
+        controller: 'ResumeCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
