@@ -13,15 +13,15 @@ angular.module('angmericaApp')
     $routeProvider
       .when('/', {
         templateUrl: 'components/main/main.view.html',
-        controller: 'MainCtrl'
+        controller: 'mainCtrl'
       })
       .when('/about', {
         templateUrl: 'components/about/about.view.html',
-        controller: 'AboutCtrl'
+        controller: 'aboutCtrl'
       })
       .when('/resume', {
         templateUrl: 'components/resume/resume.view.html',
-        controller: 'ResumeCtrl'
+        controller: 'resumeCtrl'
       })
       .otherwise({
         redirectTo: '/'

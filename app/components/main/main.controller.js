@@ -8,7 +8,7 @@
  * Controller of the angmericaApp
  */
 angular.module('angmericaApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('mainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
