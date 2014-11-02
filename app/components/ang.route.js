@@ -8,20 +8,15 @@
  *
  * Main module of the application.
  */
-angular
-  .module('angmericaApp', [
-    'ngAnimate',
-    'ngResource',
-    'ngRoute'
-  ])
+angular.module('angmericaApp')
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
+        templateUrl: 'components/main/main.view.html',
         controller: 'MainCtrl'
       })
       .when('/about', {
-        templateUrl: 'views/about.html',
+        templateUrl: 'components/about/about.view.html',
         controller: 'AboutCtrl'
       })
       .otherwise({
