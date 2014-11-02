@@ -1,13 +1,9 @@
 'use strict';
 
 /**
- * @ngdoc overview
- * @name angmericaApp
- * @description
- * # angmericaApp
- *
- * Header module of the application.
+ * Directive of the header.module App
  */
+
 angular.module('header.module')
   .directive('header', function(){
     return {

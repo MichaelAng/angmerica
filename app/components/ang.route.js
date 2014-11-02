@@ -1,13 +1,9 @@
 'use strict';
 
 /**
- * @ngdoc overview
- * @name angmericaApp
- * @description
- * # angmericaApp
- *
- * Main module of the application.
+ * Route of the angmericaApp
  */
+
 angular.module('angmericaApp')
   .config(function ($routeProvider) {
     $routeProvider

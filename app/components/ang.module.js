@@ -1,17 +1,15 @@
 'use strict';
 
 /**
- * @ngdoc overview
- * @name angmericaApp
- * @description
- * # angmericaApp
- *
- * Main module of the application.
+ * Module of the angmericaApp
  */
+
 angular
   .module('angmericaApp', [
+    'about.module',
+    'header.module',
+    'main.module',
     'ngAnimate',
     'ngResource',
-    'ngRoute',
-    'header.module'
+    'ngRoute'
   ]);

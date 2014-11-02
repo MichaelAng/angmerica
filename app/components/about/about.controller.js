@@ -1,13 +1,10 @@
 'use strict';
 
 /**
- * @ngdoc function
- * @name angmericaApp.controller:AboutCtrl
- * @description
- * # AboutCtrl
- * Controller of the angmericaApp
+ * Controller of the about.module App
  */
-angular.module('angmericaApp')
+
+angular.module('about.module')
   .controller('aboutCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
