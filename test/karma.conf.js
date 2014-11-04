@@ -23,7 +23,7 @@ module.exports = function(config) {
       'bower_components/angular-animate/angular-animate.js',
       'bower_components/angular-resource/angular-resource.js',
       'bower_components/angular-route/angular-route.js',
-      'app/components/**/*.js',
+      'app/spec/**/*.js',
       'test/components/**/*.js',
       'test/**/*.js'
     ],
