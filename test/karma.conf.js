@@ -32,8 +32,12 @@ module.exports = function(config) {
     // list of files / patterns to exclude
     exclude: [],
 
-    // web server port
-    port: 8080,
+    // I enable the following plugins
+    plugins: [
+      'karma-phantomjs-launcher',
+      'karma-jasmine',
+      'karma-coverage'
+    ],
 
     // Start these browsers, currently available:
     // - Chrome
@@ -47,11 +51,22 @@ module.exports = function(config) {
       'PhantomJS'
     ],
 
-    // Which plugins to enable
-    plugins: [
-      'karma-phantomjs-launcher',
-      'karma-jasmine'
-    ],
+    // I set import the coverage file
+    reporters: ['progress', 'coverage'],
+
+    // I point to what files to cover and create the coverage folder
+    preprocessors: {
+      'app/**/*.js': ['coverage']
+    },
+
+    // I display the coverage summary in the terminal
+    coverageReporter: {
+      reporters: [
+        {type: 'html', dir: 'coverage/', subdir: '.'},
+        {type: 'cobertura', dir: 'coverage/', subdir: '.'},
+        {type: 'text-summary'}
+      ]
+    },
 
     // Continuous Integration mode
     // if true, it capture browsers, run tests and exit
@@ -59,9 +74,12 @@ module.exports = function(config) {
 
     colors: true,
 
+    // web server port
+    port: 8080,
+
     // level of logging
     // possible values: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
-    logLevel: config.LOG_INFO,
+    logLevel: config.LOG_INFO
 
     // Uncomment the following lines if you are using grunt's server to run the tests
     // proxies: {
